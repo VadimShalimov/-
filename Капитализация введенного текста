@@ -1,0 +1,32 @@
+// Написать программу, программу, которая осуществляет капитализацию введенного пользователем текста. В качестве разделителя слов использовать пробел.
+using System;
+
+namespace massiv
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("");
+            string k = Console.ReadLine();
+            string k1 = "";
+            string h;
+
+            k = " " + k;
+            for (int i=1; i<=k.Length-1; i++)
+            {
+                if (k[i]!=' ' && k[i-1]==' ')
+                {
+                    h = s[i].ToString();
+                    k1 = s1 + h.ToUpper();
+                }
+                else
+                {
+                    k1 = k1 + k[i];
+                }
+            }
+            Console.Write(k1);
+            Console.ReadKey();
+        }
+    }
+}
